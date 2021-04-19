@@ -2,12 +2,12 @@ name: Build and Publish a versioned Ubuntu with Node and Chrome Docker Image
 on:
   push:
     branches:
-      - master
+      - main
     # Publish `v1.2.3` tags as releases.
     tags:
       - v*
 env:
-  IMAGE_NAME: streamotion-web-ubuntu-node-chrome-image
+  IMAGE_NAME: github-actions-for-packages
 jobs:
   # Run tests.
   test:
